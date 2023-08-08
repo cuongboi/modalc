@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react'
-import classes from './modal.module.css'
+import classes from './Modal.module.css'
 
 interface DialogProps {
   animationType: string
@@ -39,9 +39,7 @@ const Dialog: React.FC<DialogProps> = ({
   const className = `${classes['modal-dialog']} ${classes[`modal-${animationStyle}-${animationType}`]}`
 
   const CloseButton = showCloseButton ? (
-    <span className={classes['modal-close']} onClick={onClose} tabIndex={0}
-      aria-label="Close modal"
-    />
+    <span className={classes['modal-close']} onClick={onClose} tabIndex={0} aria-label='Close modal' />
   ) : null
 
   switch (size) {
@@ -125,6 +123,8 @@ const Modal: React.FC<ModalProps> = ({
     } else {
       leave()
     }
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [visible])
 
   const enter = () => {

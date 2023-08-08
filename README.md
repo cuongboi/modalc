@@ -5,9 +5,9 @@ ModalC is a flexible and customizable modal component for React. It provides a s
 You can install the ModalC component using your package manager of choice:
 
 ```bash
-npm install modalc
+npm install modal-c
 # or
-yarn add modalc
+yarn add modal-c
 ```
 
 ## Basic Usage
@@ -15,7 +15,7 @@ To use the ModalC component in your application, you'll need to import it and re
 
 ```jsx
 import React from "react";
-import ModalC, { useModal } from "modalc";
+import { ModalC, useModal } from "modal-c";
 
 const App = () => {
   const modal = useModal();
@@ -67,8 +67,7 @@ The ModalC component allows for more advanced customization by providing various
 
 ```jsx
 import React from "react";
-import ModalC, { useModal } from "modalc";
-import "modalc/dist/modalc.css";
+import { ModalC, useModal } from "modal-c";
 
 const App = () => {
   const modal = useModal();
