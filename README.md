@@ -15,7 +15,7 @@ To use the ModalC component in your application, you'll need to import it and re
 
 ```jsx
 import React from "react";
-import { ModalC, useModal } from "modal-c";
+import { Modal, useModal } from "modal-c";
 
 const App = () => {
   const modal = useModal();
@@ -23,14 +23,14 @@ const App = () => {
   return (
     <div>
       <button onClick={modal.open}>Open Modal</button>
-      <ModalC
+      <Modal
         visible={modal.visible}
         onClose={modal.close}
       >
         <h2>Modal Content</h2>
         <p>This is the content of the modal.</p>
         <button onClick={modal.close}>Close Modal</button>
-      </ModalC>
+      </Modal>
     </div>
   );
 };
@@ -67,7 +67,7 @@ The ModalC component allows for more advanced customization by providing various
 
 ```jsx
 import React from "react";
-import { ModalC, useModal } from "modal-c";
+import { Modal, useModal } from "modal-c";
 
 const App = () => {
   const modal = useModal();
@@ -75,7 +75,7 @@ const App = () => {
   return (
     <div>
       <button onClick={modal.open}>Open Modal</button>
-      <ModalC
+      <Modal
         visible={modal.visible}
         onClose={modal.close}
         animation="zoom"
@@ -89,7 +89,7 @@ const App = () => {
         <h2>Custom Modal</h2>
         <p>This is a customized modal with advanced options.</p>
         <button onClick={modal.close}>Close</button>
-      </ModalC>
+      </Modal>
     </div>
   );
 };
